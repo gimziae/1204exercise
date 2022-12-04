@@ -11,9 +11,12 @@
 <body>
   <h1>회원 목록</h1>
   <ul>
+    <br>
     <% for(let i = 0; i < userCounts; i++) {%>
     <li>id : <%=USER[i].id %></li>
     <li>password : <%=USER[i].password %></li>
+
+    <hr>
     <% } %>
   </ul>
 
