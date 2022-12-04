@@ -1,5 +1,4 @@
 // @ts-check
-const req = require('express/lib/request')
 
 const mongoClient = require('./mongoConnect')
 

@@ -8,6 +8,7 @@ const router = express.Router();
 router.get('/', async (req, res) => {
     const USER = await db.getAllUsers();
     const userCounts = USER.length;
+
     res.render('userInfo', {
         USER,
         userCounts,
