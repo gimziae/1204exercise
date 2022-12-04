@@ -5,7 +5,7 @@ const db = require('../controllers/userController');
 const router = express.Router();
 
 // 회원정보 가져오는 라우터
-router.get('/member', async (req, res) => {
+router.get('/', async (req, res) => {
     const USER = await db.getAllUsers();
     const userCounts = USER.length;
     res.render('userInfo', {
